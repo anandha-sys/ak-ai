@@ -1,0 +1,11 @@
+const router = require("express").Router();
+
+router.post("/", (req, res) => {
+  const { message } = req.body;
+
+  res.json({
+    reply: "You said: " + message
+  });
+});
+
+module.exports = router;
